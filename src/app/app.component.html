@@ -1,14 +1,16 @@
-<div class="wrapper">
-  <div>
-    <h1 class="text-center" >Luis Miguel Cruz Linares</h1>
-  </div>
-  <div class="gallery">
-    <div class="item" *ngFor="let item of data">
-      <h1>{{item.name}}</h1>
-      <p>{{item.description}}</p>
-      <div class="imgs">
-        <img [src]="img" alt="" *ngFor="let img of item.flickr_images">
-      </div>
-    </div>
-  </div>
+
+<div class="nombre">
+<h1>Luis Miguel Cruz Linares</h1>
 </div>
+
+<div class = "container"*ngFor="let item of info">
+<p>Serial: {{item.serial}}</p>
+<p>Status: {{item.status}}</p>
+<p>Type: {{item.type}}</p>
+<p>Launches: {{item.launches}}</p>
+<p>last_update: {{item.last_update}}</p>
+<br><br><br>
+
+</div>
+
+
